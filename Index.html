@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes y Videos</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\MINEDUCYT\Downloads\pw\imagenes\logoHorse.png" alt="Logo">
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\Index.html">Inicio</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\IndexGaleria.html">Galería</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\InformacionTurs.html">Servicios</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\IndexRegistro.html">Registrarse</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\IndexInicioSesion.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="busqueda">
+            <input type="text" placeholder="Curso ecuestre">
+            <input type="text" placeholder="Turs">
+            <button class="buscar-btn">Buscar</button>
+        </div>
+       
+        <div class="long-text" id="longText">
+            <h1 id="inicio">Quienes Somos</h1>
+            <p>
+                Bienvenido a nuestra pequeña empresa dedicada al cuidado de caballos. Nos especializamos en brindar servicios veterinarios de calidad para mantener la salud y el bienestar de tus compañeros equinos.
+            </p>
+            <h3>Servicios Destacados</h3>
+            <ul>
+                <li>Revisiones médicas regulares</li>
+                <li>Tratamiento de lesiones y enfermedades</li>
+                <li>Asesoramiento nutricional personalizado</li>
+                <li>Vacunaciones y desparasitaciones</li>
+                <li>Exámenes de laboratorio</li>
+                <li>Atención de emergencias las 24 horas</li>
+            </ul>
+            <h3>Horario de Atención</h3>
+            <p>Nuestro equipo está disponible de lunes a viernes de 8:00 a.m. a 6:00 p.m. y los sábados de 9:00 a.m. a 12:00 p.m. Para emergencias fuera de este horario, contáctanos.</p>
+            <h3>Contacto</h3>
+            <p>Puedes comunicarte con nosotros llamando al teléfono: 123-456-789 o enviando un correo electrónico a info@caballosalud.com</p>
+        </div>
+        <span class="read-more" id="readMore" onclick="toggleText()">Leer más</span>
+        
+        <button id="anterior">Anterior</button>
+        <div class="media">
+            <img src="C:\Users\MINEDUCYT\Downloads\pw\imagenes\hors1.jpeg" alt="Imagen 1">
+            <img src="C:\Users\MINEDUCYT\Downloads\pw\imagenes\hors2.jpeg" alt="Imagen 2">
+            <img src="C:\Users\MINEDUCYT\Downloads\pw\imagenes\hors3.jpeg" alt="Imagen 3">
+            <video controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <video controls>
+                <source src="videos/video3.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        <button id="siguiente">Siguiente</button>
+    </div>
+
+    <footer>
+        <div class="contacto">
+            <p>Teléfono: 123-456-789</p>
+            <p>Email: info@example.com</p>
+        </div>  
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+
+        function toggleText() {
+            var longText = document.getElementById('longText');
+            longText.classList.toggle('expanded');
+            var readMoreBtn = document.getElementById('readMore');
+            if (longText.classList.contains('expanded')) {
+                readMoreBtn.textContent = 'Leer menos';
+            } else {
+                readMoreBtn.textContent = 'Leer más';
+            }
+        }
+    </script>
+</body>
+</html>

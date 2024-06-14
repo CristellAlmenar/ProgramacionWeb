@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento de Caballos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\MINEDUCYT\Downloads\pw\imagenes\logoHorse.png" alt="Logo">
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\Index.html" class="button">Inicio</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\IndexGaleria.html" class="button">Galería</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\InformacionTurs.html" class="button">Servicios</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\IndexRegistro.html" class="button">Registrarse</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\IndexInicioSesion.html" class="button">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Entrenamiento de Caballos</h1>
+        <div class="long-text" id="longText">
+            <h2>Introducción</h2>
+            <p>
+                El entrenamiento de caballos es un arte y una ciencia que requiere paciencia, conocimiento y dedicación. A través de métodos de entrenamiento adecuados, se puede desarrollar la confianza, habilidades y comportamiento deseado en los caballos.
+            </p>
+            <h2>Objetivos del Entrenamiento</h2>
+            <ul>
+                <li>
+                    <strong>Mejora de Habilidades:</strong> Desarrollar habilidades específicas como salto, doma clásica, carreras, entre otras.
+                </li>
+                <li>
+                    <strong>Fortalecimiento Físico:</strong> Mejorar la condición física y salud general del caballo.
+                </li>
+                <li>
+                    <strong>Desarrollo de la Confianza:</strong> Fomentar una relación de confianza y respeto entre el caballo y el jinete.
+                </li>
+            </ul>
+            <h2>Metodología de Entrenamiento</h2>
+            <h3>1. Evaluación Inicial</h3>
+            <p>
+                Antes de comenzar cualquier programa de entrenamiento, es crucial evaluar al caballo para entender su estado físico y mental.
+            </p>
+            <h3>2. Plan de Entrenamiento Personalizado</h3>
+            <p>
+                Basado en la evaluación, se desarrolla un plan de entrenamiento adaptado a las necesidades específicas del caballo.
+            </p>
+            <h3>3. Entrenamiento Gradual</h3>
+            <p>
+                El entrenamiento debe progresar de manera gradual, comenzando con ejercicios básicos y avanzando a técnicas más complejas.
+            </p>
+            <h2>Ejercicios Comunes</h2>
+            <h3>1. Trabajo en el Suelo</h3>
+            <ul>
+                <li><strong>Manejo con Cuerda:</strong> Enseña al caballo a responder a las señales básicas del manejo con cuerda.</li>
+                <li><strong>Ejercicios de Respeto:</strong> Fomenta la obediencia y el respeto a través de ejercicios específicos.</li>
+            </ul>
+            <h3>2. Entrenamiento Bajo la Silla</h3>
+            <ul>
+                <li><strong>Transiciones:</strong> Practicar transiciones entre diferentes aires (paso, trote, galope).</li>
+                <li><strong>Control de Dirección:</strong> Mejorar el control y la dirección mediante la reinfuerza de comandos específicos.</li>
+            </ul>
+            <h2>Consejos para un Entrenamiento Exitoso</h2>
+            <ul>
+                <li><strong>Consistencia:</strong> Mantén una rutina de entrenamiento constante para obtener mejores resultados.</li>
+                <li><strong>Paciencia:</strong> Sé paciente y evita forzar al caballo más allá de sus límites.</li>
+                <li><strong>Recompensas:</strong> Utiliza recompensas positivas para reforzar el comportamiento deseado.</li>
+                <li><strong>Seguridad:</strong> Asegúrate de que todas las actividades de entrenamiento se realicen de manera segura para el caballo y el jinete.</li>
+            </ul>
+            <h2>Beneficios del Entrenamiento de Caballos</h2>
+            <ul>
+                <li><strong>Mejora Física:</strong> Un caballo bien entrenado es físicamente más fuerte y saludable.</li>
+                <li><strong>Comportamiento Mejorado:</strong> El entrenamiento adecuado mejora el comportamiento y la manejabilidad del caballo.</li>
+                <li><strong>Relación Fortalecida:</strong> Fomenta una relación más fuerte y de confianza entre el caballo y el jinete.</li>
+            </ul>
+        </div>
+        <span class="read-more" id="readMore" onclick="toggleText()">Leer más</span>
+    </div>
+    <footer>
+        <div class="contacto">
+            <p>Teléfono: 123-456-789</p>
+            <p>Email: info@example.com</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+
+        function toggleText() {
+            var longText = document.getElementById('longText');
+            longText.classList.toggle('expanded');
+
+            var readMore = document.getElementById('readMore');
+            if (longText.classList.contains('expanded')) {
+                readMore.innerText = "Leer menos";
+            } else {
+                readMore.innerText = "Leer más";
+            }
+        }
+    </script>
+</body>
+</html>

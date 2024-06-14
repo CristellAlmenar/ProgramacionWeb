@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alojamiento de Caballos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\MINEDUCYT\Downloads\pw\imagenes\logoHorse.png" alt="Logo">
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\Index.html" class="button">Inicio</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\IndexGaleria.html" class="button">Galería</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\InformacionTurs.html" class="button">Servicios</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\IndexRegistro.html" class="button">Registrarse</a></li>
+                <li><a href="C:\Users\MINEDUCYT\Desktop\PWEB (2) (1)\PWEB\pw\IndexInicioSesion.html" class="button">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Alojamiento y Cuidado de Caballos</h1>
+        <div class="long-text" id="longText">
+            <h2>Introducción</h2>
+            <p>
+                Ofrecemos servicios de alojamiento y cuidado de caballos en instalaciones de primera categoría, diseñadas para garantizar el bienestar y la comodidad de tu caballo. Nuestro equipo de profesionales está dedicado a proporcionar un ambiente seguro y saludable.
+            </p>
+            <h2>Instalaciones de Calidad</h2>
+            <ul>
+                <li>
+                    <strong>Boxes Espaciosos:</strong> Amplios y cómodos boxes que proporcionan el espacio necesario para el confort del caballo.
+                </li>
+                <li>
+                    <strong>Paddocks:</strong> Áreas abiertas para que los caballos puedan moverse libremente y socializar.
+                </li>
+                <li>
+                    <strong>Instalaciones de Entrenamiento:</strong> Picaderos cubiertos y al aire libre, pistas de salto y circuitos de entrenamiento.
+                </li>
+            </ul>
+            <h2>Servicios Ofrecidos</h2>
+            <h3>1. Alimentación Personalizada</h3>
+            <p>
+                Ofrecemos planes de alimentación personalizados adaptados a las necesidades nutricionales específicas de cada caballo, utilizando solo alimentos de la más alta calidad.
+            </p>
+            <h3>2. Atención Veterinaria</h3>
+            <p>
+                Contamos con servicios veterinarios de emergencia y atención regular para garantizar la salud y el bienestar continuo de los caballos.
+            </p>
+            <h3>3. Ejercicio y Entrenamiento</h3>
+            <p>
+                Programas de ejercicio y entrenamiento diarios diseñados para mantener a los caballos en óptimas condiciones físicas.
+            </p>
+            <h3>4. Cuidado Diario</h3>
+            <p>
+                Nuestro equipo se encarga del aseo diario, limpieza de boxes y supervisión constante para asegurar un entorno limpio y seguro.
+            </p>
+            <h2>Beneficios del Alojamiento Profesional</h2>
+            <ul>
+                <li><strong>Bienestar del Caballo:</strong> Un ambiente adecuado y cuidado constante mejoran la salud y el bienestar general del caballo.</li>
+                <li><strong>Tranquilidad para el Propietario:</strong> Saber que tu caballo está en buenas manos te permite disfrutar de una mayor tranquilidad.</li>
+                <li><strong>Desarrollo Óptimo:</strong> Las instalaciones y programas de ejercicio contribuyen al desarrollo físico y mental del caballo.</li>
+            </ul>
+        </div>
+        <span class="read-more" id="readMore" onclick="toggleText()">Leer más</span>
+    </div>
+    <footer>
+        <div class="contacto">
+            <p>Teléfono: 123-456-789</p>
+            <p>Email: info@example.com</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+
+        function toggleText() {
+            var longText = document.getElementById('longText');
+            longText.classList.toggle('expanded');
+
+            var readMore = document.getElementById('readMore');
+            if (longText.classList.contains('expanded')) {
+                readMore.innerText = "Leer menos";
+            } else {
+                readMore.innerText = "Leer más";
+            }
+        }
+    </script>
+</body>
+</html>
